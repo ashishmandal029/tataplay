@@ -82,6 +82,7 @@ foreach ($channels as $channel) {
         }
     }
 
+    echo "#EXTM3U x-tvg-url="https://avkb.short.gy/epg.xml.gz""
     echo "#EXTINF:-1 tvg-id=\"ts{$channel_id}\" tvg-logo=\"{$channel_logo}\" group-title=\"{$channel_genre}\",{$channel_name}\n";
     echo "#KODIPROP:inputstream.adaptive.license_type=clearkey\n";
     echo "#KODIPROP:inputstream.adaptive.license_key={$license_url}\n";
